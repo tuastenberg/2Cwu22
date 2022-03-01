@@ -13,6 +13,45 @@ body,ul{
     'nv'
     'mn'
 }
+#gridsida2 {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 33% 33% 1fr;
+    grid-template-areas: 
+    'art21 art22 art23'
+    'art21 art22 art24'
+    'art21 art22 art25'
+    'art21 art22 art26'
+}
+.art21{
+    grid-area: art21;
+    background-color: lightblue;
+
+}
+.art22{
+    grid-area: art22;
+    background-color: lightgrey;
+}
+.art23{
+    grid-area: art23;
+    background-color: lightpink;
+}
+.art24{
+    grid-area: art24;
+    background-color: lightgoldenrodyellow;
+}
+.art25{
+    grid-area: art25;
+    background-color: aquamarine;
+}
+.art26{
+    grid-area: art26;
+    background-color: cornflowerblue;
+    
+}
+
 .menu{
     height: 100vh;
     width: 80vw;
