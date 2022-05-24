@@ -1,8 +1,34 @@
 body,ul{
     margin: 0;
 }
-
-
+img {
+    height: 100%;
+    width: 100%;
+}
+h1 {
+    padding-left: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p{
+    padding-left: 1rem;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    line-height: 2rem;
+}
+li {
+    line-height: 2rem;
+}
+h2 {
+    padding-left: 3rem;
+}
+h3 {
+    padding-left: 1rem;
+    font-size: medium;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+h4{
+    text-align: center;
+    font-size: 3.5rem ;
+}
 #grid {
     display: grid;
     height: 100vh;
@@ -13,49 +39,173 @@ body,ul{
     'nv'
     'mn'
 }
+#gridsida1 {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-areas: 
+    'art14 art1 art12'
+    'art15 art1 art13'
+    'ft1 ft1 ft1';
+    background-color: rgb(254, 251, 231);
+}
+.art1 {
+    grid-area: art1;
+    background-color: rgb(249, 235, 200);
+    margin: 0.5rem;
+}
+.art12 {
+    grid-area: art12;
+    background-color: rgb(249, 235, 200);
+    margin: 0.5rem;
+}
+.art13 {
+    grid-area: art13;
+    background-color: rgb(249, 235, 200);
+    margin: 0.5rem;
+}
+.art14 {
+    grid-area: art14;
+    background-color: rgb(249, 235, 200);
+    margin: 0.5rem;
+}
+.art15 {
+    grid-area: art15;
+    background-color: rgb(249, 235, 200);
+    margin: 0.5rem;
+}
+.fot1 {
+    grid-area: ft1;
+    background-color: rgb(218, 229, 208);
+    margin: 0.5rem;
+}
 #gridsida2 {
     display: grid;
     height: 100vh;
     width: 100vw;
     grid-template-rows: 25% 25% 25% 25%;
-    grid-template-columns: 33% 33% 1fr;
+    grid-template-columns: 35% 35% 8% 22%;
     grid-template-areas: 
-    'art21 art22 art23'
-    'art21 art22 art24'
-    'art21 art22 art25'
-    'art21 art22 art26'
+    'art21 art22 art23 art23b'
+    'art21 art22 art24 art24b'
+    'art21 art22 art25 art25b'
+    'art21 art22 art26 art26b'
+}
+#gridsida3 {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-areas:
+    'art31 art32 art33 art34 art35'
+    'art31b art32b art33b art34b art35b';
+    background-color: rgb(254, 251, 231);
 }
 .art21{
     grid-area: art21;
-    background-color: lightblue;
+    background-color: rgb(254, 251, 231);
+    margin: 1rem;
 
 }
 .art22{
     grid-area: art22;
-    background-color: lightgrey;
+    background-color: rgb(254, 251, 231);
+    margin: 1rem;
 }
 .art23{
     grid-area: art23;
     background-color: lightpink;
+    margin: 0.5rem;
+}
+.art23b{
+    grid-area: art23b;
+    background-color: rgb(218, 229, 208);
+    margin: 0.5rem;
 }
 .art24{
     grid-area: art24;
     background-color: lightgoldenrodyellow;
+    margin: 0.5rem;
+}
+.art24b{
+    grid-area: art24b;
+    background-color: rgb(218, 229, 208);
+    margin: 0.5rem;
 }
 .art25{
     grid-area: art25;
     background-color: aquamarine;
+    margin: 0.5rem;
+}
+.art25b{
+    grid-area: art25b;
+    background-color: rgb(218, 229, 208);
+    margin: 0.5rem;
 }
 .art26{
     grid-area: art26;
     background-color: cornflowerblue;
+    margin: 0.5rem;
     
+}
+.art26b{
+    grid-area: art26b;
+    background-color: rgb(218, 229, 208);
+    margin: 0.5rem;
+}
+.art31{
+    grid-area: art31;
+    margin: 1rem;
+}
+.art31b{
+    grid-area: art31b;
+    background-color: rgb(249, 235, 200);
+    margin: 1rem;
+}
+.art32{
+    grid-area: art32;
+    margin: 1rem;
+}
+.art32b{
+    grid-area: art32b;
+    background-color: rgb(249, 235, 200);
+    margin: 1rem;
+}
+.art33{
+    grid-area: art33;
+    margin: 1rem;
+}
+.art33b{
+    grid-area: art33b;
+    background-color: rgb(249, 235, 200);
+    margin: 1rem;
+}
+.art34{
+    grid-area: art34;
+    margin: 1rem;
+}
+.art34b{
+    grid-area: art34b;
+    background-color: rgb(249, 235, 200);
+    margin: 1rem;
+}
+.art35{
+    grid-area: art35;
+    margin: 1rem;
+}
+.art35b{
+    grid-area: art35b;
+    background-color: rgb(249, 235, 200);
+    margin: 1rem;
 }
 
 .menu{
     height: 100vh;
     width: 80vw;
-    background:white;
+    background:rgb(254, 251, 231);
     position: fixed;
     top: 0;
     left: -90vw;
@@ -65,12 +215,13 @@ body,ul{
 }
 main {
     grid-area: mn;
-    background-color: blue;
+    background-color: rgb(249, 235, 200);
 }
 header {
     grid-area: hd;
-    background-color: brown;
+    background-color: rgb(160, 188, 194);
     font-size: xx-large;
+    font-family: Georgia, Times, 'Times New Roman', serif;
 }
 .menu-button{
     cursor: pointer;
@@ -101,12 +252,125 @@ header {
 }
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(254, 251, 231);
 
 }
 @media screen and (max-width:500px) {
     body {
-        background-color: rgb(255, 255, 255); 
+        background-color: rgb(148, 180, 159); 
         color: black;
     }
+
+    #gridsida2 {
+        display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    'art21'
+    'art22'
+    'art23'
+    'art23b'
+    'art24'
+    'art24b'
+    'art25'
+    'art25b'
+    'art26'
+    'art26b'
+    }
+
+    #gridsida3 {
+        display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    'art31'
+    'art31b'
+    'art32'
+    'art32b'
+    'art33'
+    'art33b'
+    'art34'
+    'art34b'
+    'art35'
+    'art35b'
+    
+    
+    }
+
+    #kalender, #mån {
+        display: none;
+    }
+
+    #gridsida4 {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'hide'
+    }
+    .hide {
+        display: block;
+        grid-area: hide;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+#gridsida4 {
+    display: grid;
+    width: 100vw;
+    grid-template-rows: 3.5rem 1fr;
+    grid-template-areas:
+    'md'
+    'ka'
+}
+#mån {
+    grid-area: md;
+    font-size: 1.5rem;
+    margin: 0;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+#kalender {
+    grid-area: ka;
+}
+.col {
+    height: 3rem;
+    vertical-align: text-top;
+}
+.col, .rad {
+    padding-top: 1rem;
+}
+#mobilkalender {
+    grid-area: mk;
+    font-size: 1rem;
+    display: none;
+}
+.mobcol {
+    height: 2rem;
+    width: 6rem;
+    vertical-align: middle;
+}
+.mobcol:nth-child(3) {
+    width: 50%;
+}
+.rad:nth-child(even), .mobrad:nth-child(even) {
+    background-color: rgb(254, 251, 231);
+    /* Välj egen färg här */
+}
+.rad:nth-child(odd), .mobrad:nth-child(odd) {
+    background-color: rgb(218, 229, 208);
+    /* Välj egen färg här */
+}
+.col, .mobcol {
+    text-align: center;
+}
+.col:first-child, .rad:first-child, .mobcol:first-child, .mobrad:first-child {
+    font-weight: bold;
 }
